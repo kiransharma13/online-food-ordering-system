@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Order history — Fork &amp; Plate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div id="nav-root"></div>
+    </header>
+    <main>
+      <h1 class="page-title">Order history</h1>
+      <p class="page-sub">Past orders with line items and totals from when you checked out.</p>
+      <div id="orders-gate" class="hidden"></div>
+      <div id="orders-root" class="hidden"></div>
+    </main>
+    <script type="module" src="js/pages/orders.js"></script>
+  </body>
+</html>

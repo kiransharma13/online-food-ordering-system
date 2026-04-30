@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cart — Fork &amp; Plate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div id="nav-root"></div>
+    </header>
+    <main>
+      <h1 class="page-title">Your cart</h1>
+      <p class="page-sub">Quantities sync to your account. Checkout creates an order and clears the cart.</p>
+      <div id="cart-gate" class="hidden"></div>
+      <div id="cart-content" class="hidden">
+        <div class="card">
+          <div id="cart-table-wrap"></div>
+          <div class="cart-summary">
+            <div>
+              <span class="page-sub" style="margin: 0">Subtotal</span>
+              <strong id="cart-subtotal">₹0.00</strong>
+            </div>
+            <button type="button" class="btn btn-primary" id="checkout-btn">Place order</button>
+          </div>
+          <div id="checkout-msg" class="mt-1"></div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="js/pages/cart.js"></script>
+  </body>
+</html>
